@@ -1,7 +1,7 @@
-.navbar {
+.navbar,
+.navbar_dark {
   min-width: 300px;
   height: 100vh;
-  background: $white_light;
 
   .logo {
     text-align: center;
@@ -14,7 +14,8 @@
     gap: 10px;
   }
 
-  .navbar_link.active {
+  .navbar_link.active,
+  .navbar_link_dark.active {
     width: 90%;
     height: 60px;
     background: $blue_light;
@@ -40,10 +41,10 @@
     }
   }
 
-  .navbar_link {
+  .navbar_link,
+  .navbar_link_dark {
     width: 90%;
     height: 60px;
-    background: $white_light;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -51,7 +52,6 @@
     padding-left: 35px;
     gap: 20px;
     border-radius: 0px 10px 10px 0px;
-    border: 2px solid $gray_light;
     transition: 0.4s linear;
 
     &:hover {
@@ -64,15 +64,14 @@
       color: $white_light;
     }
     & .navbar_icon {
-      color: $black_light;
-      font-size: 26px;
+      font-size: 28px;
     }
 
     & .navbar_text {
-      color: $black_light;
       letter-spacing: 2px;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 500;
+      font-family: $nunito_fonts;
     }
   }
 }

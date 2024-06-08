@@ -23,7 +23,6 @@ export default function App() {
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/students" element={<Students />} />
       </Routes>
-
     </div>
   );
 }
