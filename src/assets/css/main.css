@@ -692,5 +692,96 @@ template {
 .navbar_dark .navbar_link_dark .navbar_text {
   letter-spacing: 2px;
   font-size: 20px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
 
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardinfo .title {
+  color: #202224;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.11px;
+  text-align: left;
+  margin-top: 25px;
+}
+.cardinfo .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.cardinfo .info img {
+  width: 100%;
+  height: 450px;
+}
+
+.cardinfo__warapper {
+  width: 262px;
+  height: 161px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 14px;
+  box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+.cardinfo__warapper .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cardinfo__warapper .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cardinfo__warapper .top .left h3 {
+  color: rgb(32, 34, 36);
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.cardinfo__warapper .top .left h2 {
+  color: #202224;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.cardinfo__warapper .top .right {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background: rgb(130, 128, 255);
+  font-size: 30px;
+  color: rgb(234, 233, 255);
+}
+.cardinfo__warapper .down {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #00b69b;
+}
+.cardinfo__warapper .down span {
+  color: #202224;
 }/*# sourceMappingURL=main.css.map */
