@@ -385,7 +385,7 @@ template {
   color: #4880ff;
 }
 
-.header_notice_darc {
+.header_notice_dark {
   color: #fff;
 }
 
@@ -549,15 +549,15 @@ template {
   color: #fff;
   font-size: 30px;
 }
-.header_dark .header_right button .soon,
-.header .header_right button .soon {
+.header_dark .header_right button .moon,
+.header .header_right button .moon {
   color: #4880ff;
   font-size: 30px;
 }
-.header_dark .header_notice_darc,
 .header_dark .header_notice,
-.header .header_notice_darc,
-.header .header_notice {
+.header_dark .header_notice_dark,
+.header .header_notice,
+.header .header_notice_dark {
   font-size: 28px;
 }
 .header_dark .header_language,
@@ -605,11 +605,19 @@ template {
 .navbar_dark {
   min-width: 300px;
   height: 100vh;
+  transition: min-width 0.3s ease;
 }
 .navbar .logo,
 .navbar_dark .logo {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px 0px;
+}
+.navbar .logo img,
+.navbar_dark .logo img {
+  width: 60px;
+  height: 50px;
 }
 .navbar .navbar_wrapper,
 .navbar_dark .navbar_wrapper {
@@ -638,16 +646,17 @@ template {
 .navbar_dark .navbar_link.active .navbar_icon,
 .navbar_dark .navbar_link_dark.active .navbar_icon {
   color: #fff;
-  font-size: 26px;
+  font-size: 28px;
 }
 .navbar .navbar_link.active .navbar_text,
 .navbar .navbar_link_dark.active .navbar_text,
 .navbar_dark .navbar_link.active .navbar_text,
 .navbar_dark .navbar_link_dark.active .navbar_text {
+  font-family: "Nunito Sans", sans-serif;
   color: #fff;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 20px;
-  font-weight: bold;
 }
 .navbar .navbar_link,
 .navbar .navbar_link_dark,
@@ -690,10 +699,39 @@ template {
 .navbar .navbar_link_dark .navbar_text,
 .navbar_dark .navbar_link .navbar_text,
 .navbar_dark .navbar_link_dark .navbar_text {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 20px;
-  font-weight: 500;
-  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar_open {
+  min-width: 100px;
+}
+.navbar_open .navbar_link.active,
+.navbar_open .navbar_link_dark.active,
+.navbar_open .navbar_link,
+.navbar_open .navbar_link_dark {
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 80%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.navbar_open .navbar_link.active .navbar_icon,
+.navbar_open .navbar_link_dark.active .navbar_icon,
+.navbar_open .navbar_link .navbar_icon,
+.navbar_open .navbar_link_dark .navbar_icon {
+  font-size: 36px;
+}
+.navbar_open .navbar_link.active .navbar_text,
+.navbar_open .navbar_link_dark.active .navbar_text,
+.navbar_open .navbar_link .navbar_text,
+.navbar_open .navbar_link_dark .navbar_text {
+  display: none;
 }
 
 .cardinfo {
