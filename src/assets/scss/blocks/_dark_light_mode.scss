@@ -1,0 +1,101 @@
+// body
+
+.body_light {
+  background: $bg_light;
+  color: $black_light;
+}
+
+.body_dark {
+  background: $bg_dark;
+  color: $white_light;
+}
+
+// header
+
+.header {
+  background: $white_light;
+}
+
+.header_dark {
+  background: $black_dark;
+}
+
+.header_notice {
+  color: $blue_light;
+}
+
+.header_notice_dark {
+  color: $white_light;
+}
+
+.header_profile_title {
+  color: rgba($black_light, 0.8);
+}
+
+.header_profile_title_dark {
+  color: rgba($white_light, 0.8);
+}
+
+.header_input {
+  background: #f5f6fa;
+  border: 0.6px solid #d5d5d5;
+  color: $black_light;
+
+  &::placeholder {
+    color: #959595;
+  }
+}
+
+.header_input_dark {
+  background: #323d4e;
+  border: 0.6px solid #cfcfcf1c;
+  color: $white_light;
+
+  &::placeholder {
+    color: $white_light;
+  }
+}
+
+.header_search_icon {
+  color: #959595;
+}
+
+.header_search_icon_dark {
+  color: $white_light;
+}
+
+// navbar
+
+.navbar {
+  background: $white_light;
+}
+
+.navbar_dark {
+  background: $black_dark;
+}
+
+.navbar_link {
+  background: $white_light;
+  border: 2px solid $gray_light;
+
+  & .navbar_text {
+    color: $black_light;
+  }
+
+  & .navbar_icon {
+    color: $black_light;
+  }
+}
+
+.navbar_link_dark {
+  background: #323d4e;
+  border: 2px solid #cfcfcf1c;
+
+  & .navbar_text {
+    color: $white_light;
+  }
+
+  & .navbar_icon {
+    color: $white_light;
+  }
+}
