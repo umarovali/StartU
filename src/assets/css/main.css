@@ -647,6 +647,7 @@ template {
 .navbar_dark .navbar_link_dark.active .navbar_icon {
   color: #fff;
   font-size: 28px;
+  padding-top: 5px;
 }
 .navbar .navbar_link.active .navbar_text,
 .navbar .navbar_link_dark.active .navbar_text,
@@ -694,6 +695,7 @@ template {
 .navbar_dark .navbar_link .navbar_icon,
 .navbar_dark .navbar_link_dark .navbar_icon {
   font-size: 28px;
+  padding-top: 5px;
 }
 .navbar .navbar_link .navbar_text,
 .navbar .navbar_link_dark .navbar_text,
@@ -719,13 +721,13 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10px;
 }
 .navbar_open .navbar_link.active .navbar_icon,
 .navbar_open .navbar_link_dark.active .navbar_icon,
 .navbar_open .navbar_link .navbar_icon,
 .navbar_open .navbar_link_dark .navbar_icon {
   font-size: 36px;
+  padding-top: 5px;
 }
 .navbar_open .navbar_link.active .navbar_text,
 .navbar_open .navbar_link_dark.active .navbar_text,
