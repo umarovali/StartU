@@ -17,9 +17,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/applications" element={<Applications />} />
-        <Route path="/finace" element={<Finace />} />
+        <Route path="/finace/*" element={<Finace />} />
         <Route path="/groups" element={<Groups />} />
-        <Route path="/report" element={<Report />} />
+        <Route path="/report/*" element={<Report />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/students" element={<Students />} />
       </Routes>
