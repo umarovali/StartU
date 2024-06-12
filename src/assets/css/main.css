@@ -459,6 +459,74 @@ template {
   color: #fff;
 }
 
+.card_item {
+  background: #fff;
+}
+
+.card_item_dark {
+  background: #273142;
+}
+
+.trend_span {
+  color: #202224;
+}
+
+.trend_span_dark {
+  color: #fff;
+}
+
+.card_icon_bg_blue {
+  background: rgba(72, 128, 255, 0.25);
+}
+
+.card_icon_bg_yellow {
+  background: rgba(255, 213, 109, 0.25);
+}
+
+.card_icon_bg_green {
+  background: rgba(0, 182, 155, 0.25);
+}
+
+.card_icon_bg_red {
+  background: rgba(249, 60, 101, 0.25);
+}
+
+.card_icon_bg_blue_dark {
+  background: #4880ff;
+}
+
+.card_icon_bg_yellow_dark {
+  background: #ffd56d;
+}
+
+.card_icon_bg_green_dark {
+  background: #00b69b;
+}
+
+.card_icon_bg_red_dark {
+  background: #f93c65;
+}
+
+.card_icon_blue {
+  color: #4880ff;
+}
+
+.card_icon_yellow {
+  color: #ffd56d;
+}
+
+.card_icon_green {
+  color: #00b69b;
+}
+
+.card_icon_red {
+  color: #f93c65;
+}
+
+.card_icon_white_dark {
+  color: #fff;
+}
+
 .container {
   max-width: 95%;
   width: 100%;
@@ -736,53 +804,5 @@ template {
   display: none;
 }
 
-.finace__navbar {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 30px;
-  margin-top: 30px;
-  overflow-x: scroll;
-  white-space: nowrap;
-  padding: 13px;
-}
-.finace__navbar::-webkit-scrollbar {
-  display: none;
-}
-.finace__navbar .finace__card {
-  padding: 20px;
-  box-shadow: 0px 0px 15px 1px rgba(34, 60, 80, 0.2);
-  height: 55px;
-  border-radius: 34px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: Nunito Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0px;
-  color: #202224;
-  transition: all 0.5s linear;
-}
-.finace__navbar .finace__card.active {
-  color: white;
-  background-color: #4880ff;
-  transform: scale(1.05);
-}
-.finace__navbar .finace__card:hover {
-  color: white;
-  background-color: #4880ff;
-  transform: scale(1.08);
-}
-.finace__navbar .finace__card .finace__icon {
-  font-family: Nunito Sans;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0px;
-  -o-object-fit: contain;
-     object-fit: contain;
+
 }/*# sourceMappingURL=main.css.map */
