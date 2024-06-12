@@ -99,3 +99,73 @@
     color: $white_light;
   }
 }
+
+// home
+
+.card_item {
+  background: $white_light;
+}
+
+.card_item_dark {
+  background: $black_dark;
+}
+
+.trend_span {
+  color: $black_light;
+}
+
+.trend_span_dark {
+  color: $white_light;
+}
+
+.card_icon_bg_blue {
+  background: rgba($blue_light, 0.25);
+}
+
+.card_icon_bg_yellow {
+  background: rgba($yellow_light, 0.25);
+}
+
+.card_icon_bg_green {
+  background: rgba($green_light, 0.25);
+}
+
+.card_icon_bg_red {
+  background: rgba($red_light, 0.25);
+}
+
+.card_icon_bg_blue_dark {
+  background: $blue_light;
+}
+
+.card_icon_bg_yellow_dark {
+  background: $yellow_light;
+}
+
+.card_icon_bg_green_dark {
+  background: $green_light;
+}
+
+.card_icon_bg_red_dark {
+  background: $red_light;
+}
+
+.card_icon_blue {
+  color: $blue_light;
+}
+
+.card_icon_yellow {
+  color: $yellow_light;
+}
+
+.card_icon_green {
+  color: $green_light;
+}
+
+.card_icon_red {
+  color: $red_light;
+}
+
+.card_icon_white_dark {
+  color: $white_light;
+}
