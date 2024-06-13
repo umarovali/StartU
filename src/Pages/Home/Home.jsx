@@ -1,10 +1,12 @@
 import React from 'react'
-import CardInfo from './CardInfo/CardInfo'
+import CardWrapper from './CardInfo/CardWrapper'
 
 export default function Home() {
   return (
-    <div>
-      <CardInfo />
-    </div>
+    <section>
+      <div className="container">
+        <CardWrapper />
+      </div>
+    </section>
   )
 }
