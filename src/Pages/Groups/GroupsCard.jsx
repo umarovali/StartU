@@ -1,5 +1,4 @@
 import React from "react";
-import "../../assets/scss/blocks/groups/_groups_card.scss";
 
 export default function GroupsCard(groups_card_props) {
   return (

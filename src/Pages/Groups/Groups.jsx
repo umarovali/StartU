@@ -3,7 +3,6 @@ import GroupsCard from "./GroupsCard";
 
 // Images
 import { FaPlusCircle } from "react-icons/fa";
-import { FaChalkboardTeacher } from "react-icons/fa";
 import Card_Image from "../../assets/images/Card_Image.png";
 
 export default function Groups() {
