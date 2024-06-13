@@ -8,6 +8,7 @@ import Groups from "./Pages/Groups/Groups";
 import Report from "./Pages/Report/Report";
 import Teachers from "./Pages/Teachers/Teachers";
 import Students from "./Pages/Students/Students";
+import Payment from "./Pages/Payment/Payment";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/chek" element={<Payment />} />
         <Route path="/applications" element={<Applications />} />
         <Route path="/finace/*" element={<Finace />} />
         <Route path="/groups" element={<Groups />} />
