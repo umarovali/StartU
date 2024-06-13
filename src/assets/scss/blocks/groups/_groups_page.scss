@@ -1,0 +1,108 @@
+.groups_page {
+  padding-top: 39px;
+
+  .groups_page_head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .groups_page_head_title {
+    font-family: $nunito_fonts;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  .groups_page_head_inputs {
+    display: flex;
+    gap: 20px;
+  }
+
+  .groups_page_head_inputs_input {
+    width: 340px;
+    height: 40px;
+    padding-left: 12px;
+    font-family: $nunito_fonts;
+    border-radius: 5px;
+    background: #f5f6fa;
+    border: 0.6px solid #d5d5d5;
+    outline: none;
+    font-weight: 500;
+
+    &:focus {
+      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+    }
+  }
+
+  .groups_page_head_inputs_btn {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $blue_light;
+    color: #fff;
+    border: none;
+    font-family: $nunito_fonts;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: #3369e8;
+      box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .groups_page_head_filters {
+    display: flex;
+    gap: 20px;
+  }
+
+  .groups_page_head_filters_choose_teacher {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: $nunito_fonts;
+    border-radius: 5px;
+    padding-left: 12px;
+    border: 0.6px solid #d5d5d5;
+    outline: none;
+    font-weight: 500;
+    color: #6c6c6c;
+
+    &:focus {
+      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+    }
+  }
+
+  .groups_page_head_filters_choose_course {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: $nunito_fonts;
+    border-radius: 5px;
+    padding-left: 12px;
+    background: #f5f6fa;
+    border: 0.6px solid #d5d5d5;
+    outline: none;
+    font-weight: 500;
+    color: #6c6c6c;
+
+    &:focus {
+      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+    }
+  }
+
+  .groups_page_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
