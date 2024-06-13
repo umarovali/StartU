@@ -9,6 +9,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiStudentFill } from "react-icons/pi";
 import useDarkModeStore from "../../Store/DarcModeStore";
 import useBurgerStore from "../../Store/BurgerStore";
+import { GiPayMoney } from "react-icons/gi";
 // img logo
 import Logo from "../../assets/images/Logo.png";
 
@@ -17,13 +18,22 @@ export default function Navbar() {
   const { isMenuOpen } = useBurgerStore();
 
   return (
-    <div className={`${darkMode ? "navbar" : "navbar_dark"} ${isMenuOpen ? "navbar_open" : ""}`}>
+    <div
+      className={`${darkMode ? "navbar" : "navbar_dark"} ${
+        isMenuOpen ? "navbar_open" : ""
+      }`}
+    >
       <div className="logo">
         <img src={Logo} alt="" />
       </div>
 
       <ul className="navbar_wrapper">
         <NavbarLink href={"/"} icon={<MdOutlineHome />} text={"Главный"} />
+        <NavbarLink
+          href={"/chek"}
+          icon={<GiPayMoney />}
+          text={"Оплата"}
+        />
         <NavbarLink
           href={"/applications"}
           icon={<HiOutlinePencilAlt />}
