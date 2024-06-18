@@ -4,11 +4,13 @@ import { FaPlusCircle } from "react-icons/fa";
 import Card_Image from "../../assets/images/Card_Image.png";
 import { IoIosSearch } from "react-icons/io";
 import { Modal, Box, Typography, Button, TextField } from "@mui/material";
+import useDarkModeStore from "../../Store/DarcModeStore";
 
 export default function Groups() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const { darkMode, toggleDarkMode } = useDarkModeStore();
 
   return (
     <section>
@@ -19,7 +21,11 @@ export default function Groups() {
           <div className="groups_page_head">
             <div className="groups_page_head_inputs">
               <input
-                className="groups_page_head_inputs_input"
+                className={`${
+                  darkMode
+                    ? "groups_page_head_inputs_input-light"
+                    : "groups_page_head_inputs_input-dark"
+                }`}
                 type="text"
                 placeholder="Найти группу"
               />
@@ -28,7 +34,13 @@ export default function Groups() {
 
             <div className="groups_page_head_filters">
               <div className="select_wrapper">
-                <select className="groups_page_head_filters_choose_teacher">
+                <select
+                  className={`${
+                    darkMode
+                      ? "groups_page_head_filters_choose_teacher-light"
+                      : "groups_page_head_filters_choose_teacher-dark"
+                  }`}
+                >
                   <option value="Выберите учителя">Выберите учителя</option>
                   <option value="111">111</option>
                   <option value="222">222</option>
@@ -37,7 +49,13 @@ export default function Groups() {
               </div>
 
               <div className="select_wrapper">
-                <select className="groups_page_head_filters_choose_course">
+                <select
+                  className={`${
+                    darkMode
+                      ? "groups_page_head_filters_choose_course-light"
+                      : "groups_page_head_filters_choose_course-dark"
+                  }`}
+                >
                   <option value="Выберите курс">Выберите курс</option>
                   <option value="111">111</option>
                   <option value="222">222</option>
@@ -46,7 +64,13 @@ export default function Groups() {
               </div>
 
               <div className="select_wrapper">
-                <select className="groups_page_head_filters_choose_teacher">
+                <select
+                  className={`${
+                    darkMode
+                      ? "groups_page_head_filters_choose_teacher-light"
+                      : "groups_page_head_filters_choose_teacher-dark"
+                  }`}
+                >
                   <option value="Выберите учителя">Выберите уровень</option>
                   <option value="111">111</option>
                   <option value="222">222</option>
