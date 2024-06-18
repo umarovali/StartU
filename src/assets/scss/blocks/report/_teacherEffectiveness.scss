@@ -1,0 +1,63 @@
+.search-wrapper {
+  border-radius: 0.5rem;
+  background-color: #e2e8f0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 40px;
+
+  gap: 200px;
+  .report_buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & button {
+      border: none;
+      padding: 5px 30px;
+      box-shadow: 0px 0px 15px 1px rgba(34, 60, 80, 0.2);
+      height: 55px;
+      border-radius: 34px;
+      background: $white_light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: Nunito Sans;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0px;
+      color: $black_light;
+      transition: all 0.5s linear;
+
+      &.active {
+        color: white;
+        background-color: $blue_light;
+        transform: scale(1.05);
+      }
+
+      &:hover {
+        color: white;
+        background-color: $blue_light;
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+.chart_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.pie-chart-section,
+.pie-chart-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
