@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useDarkModeStore from "../../Store/DarcModeStore";
 
 export default function ReceiptForm() {
   const [date, setDate] = useState("");
@@ -10,16 +11,17 @@ export default function ReceiptForm() {
   const [amount, setAmount] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
   const [details, setDetails] = useState("");
+  const { darkMode, toggleDarkMode } = useDarkModeStore();
 
   return (
     <div className="paymet-wrapper">
-      <div className="paymet-form">
+      <div className={`${darkMode ? "paymet-form-light" : "paymet-form-dark"}`}>
         <div className="receipt-form">
           <div className="chek__title">
             <h2>Электронный чек</h2>
             <h2 className="chek__number">1</h2>
           </div>
-          <div className="payment__inputs">
+          <div className={`${darkMode ? "payment__inputs-light" : "payment__inputs-dark"}`}>
             <input
               type="text"
               value={firstName}
@@ -60,19 +62,21 @@ export default function ReceiptForm() {
               <select
                 value={paymentMethod}
                 onChange={(e) => setPaymentMethod(e.target.value)}
-                className="receipt-form__select"
+                className={`${darkMode ? "receipt__form-select-light" : "receipt__form-select-dark"}`}
               >
                 <option value="">Способ оплаты</option>
                 <option value="cash">Наличными</option>
                 <option value="card">Картой</option>
               </select>
 
-              <button className="payment__btn">Chek</button>
+              <button className={`${darkMode ? "payment__btn-light" : "payment__btn-dark"}`}>Chek</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="paymet-paid"></div>
+      <div
+        className={`${darkMode ? "paymet-paid-light" : "paymet-paid-dark"}`}
+      ></div>
     </div>
   );
 }

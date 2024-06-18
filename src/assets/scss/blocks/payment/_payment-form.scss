@@ -30,14 +30,14 @@
   align-items: center;
   gap: 180px;
 
-  .paymet-form {
+  .paymet-form-light,
+  .paymet-form-dark {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 470px;
     height: 620px;
     border-radius: 20px;
-    background: url("/src/assets/images/Pattern.svg"), $white_light;
     box-shadow: 6px 6px 54px 0px rgba($blue_light, 0.1);
     transition: transform 0.3s linear, box-shadow 0.3s linear;
     box-sizing: border-box;
@@ -82,7 +82,8 @@
       }
     }
 
-    .payment__inputs {
+    .payment__inputs-light,
+    .payment__inputs-dark {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -91,14 +92,14 @@
       margin-top: 20px;
     }
 
-    .payment__inputs input,
-    .payment__inputs textarea {
+    .payment__inputs-light input,
+    .payment__inputs-light textarea,
+    .payment__inputs-dark input,
+    .payment__inputs-dark textarea {
       width: 360px;
       height: 50px;
       padding: 10px;
       border-radius: 6px;
-      background: $white_light;
-      border: none;
       outline: none;
       transition: box-shadow 0.3s ease;
       box-shadow: 3px 3px 18px 0px rgba($blue_light, 0.1);
@@ -109,21 +110,18 @@
       box-shadow: 6px 6px 54px 0px rgba($blue_light, 0.1);
     }
 
-    .receipt-form__select {
+    .receipt__form-select-light,
+    .receipt__form-select-dark {
       width: 150px;
       height: 50px;
       height: 50px;
       padding: 10px;
       border-radius: 6px;
       box-shadow: 0px 13px 61px 0px rgba(169, 169, 169, 0.37);
-      background: $white_light;
       border: none;
       outline: none;
-      transition: box-shadow 0.3s ease;
+      transition: color 0.5s linear;
       appearance: none;
-      background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px
-        center;
-      background-size: 16px;
     }
 
     .peceipt__wrapper-two {
@@ -133,17 +131,16 @@
       gap: 60px;
       margin: 20px;
 
-      .payment__btn {
+      .payment__btn-light,
+      .payment__btn-dark {
         width: 150px;
         height: 50px;
         padding: 10px;
         border-radius: 6px;
         box-shadow: 0px 13px 61px 0px rgba(169, 169, 169, 0.37);
-        background: $white_light;
         border: none;
         outline: none;
-        transition: all 0.5s linear;
-
+        transition: color 0.5s linear;
         &:hover {
           background: $white_light;
         }
@@ -166,11 +163,11 @@
     }
   }
 
-  .paymet-paid {
+  .paymet-paid-light,
+  .paymet-paid-dark {
     width: 470px;
     height: 620px;
     border-radius: 20px;
-    background: url("/src/assets/images/Pattern.svg"), $white_light;
     box-shadow: 6px 6px 54px 0px rgba($blue_light, 0.1);
     transition: transform 0.3s linear, box-shadow 0.3s linear;
     box-sizing: border-box;
