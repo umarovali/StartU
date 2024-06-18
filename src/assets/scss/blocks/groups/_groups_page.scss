@@ -4,9 +4,9 @@
   .groups_page_head {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
-    gap: 20px;
+    margin: 40px 0;
   }
 
   .groups_page_head_title {
@@ -15,24 +15,38 @@
     font-weight: 800;
   }
 
-  .groups_page_head_inputs {
+  .groups_page_head_filters {
     display: flex;
-    gap: 20px;
+    gap: 30px;
   }
 
-  .groups_page_head_inputs_input {
-    width: 340px;
-    height: 40px;
-    padding-left: 12px;
-    font-family: $nunito_fonts;
-    border-radius: 5px;
-    background: #f5f6fa;
-    border: 0.6px solid #d5d5d5;
-    outline: none;
-    font-weight: 500;
+  .groups_page_head_inputs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 
-    &:focus {
-      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+    .groups_page_head_inputs_input {
+      width: 340px;
+      height: 40px;
+      padding: 0 10px;
+      padding-right: 35px;
+      font-family: $nunito_fonts;
+      border-radius: 5px;
+      background: $white_light;
+      border: 0.6px solid #d5d5d5;
+      outline: none;
+      font-weight: 500;
+
+      &:focus {
+        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      font-size: 20px;
     }
   }
 
@@ -51,48 +65,30 @@
     justify-content: center;
     gap: 8px;
     cursor: pointer;
+
     &:hover {
-      background-color: #3369e8;
+      background-color: darken($blue_light, 10%);
       box-shadow: 6px 6px 54px 0px rgba(0, 0, 0, 0.05);
     }
   }
 
-  .groups_page_head_filters {
-    display: flex;
-    gap: 20px;
-  }
-
-  .groups_page_head_filters_choose_teacher {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 17px;
-    font-family: $nunito_fonts;
-    border-radius: 5px;
-    padding-left: 12px;
-    border: 0.6px solid #d5d5d5;
-    outline: none;
-    font-weight: 500;
-    color: #6c6c6c;
-
-    &:focus {
-      box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
-    }
-  }
-
+  .groups_page_head_filters_choose_teacher,
   .groups_page_head_filters_choose_course {
     width: 200px;
     height: 40px;
     border-radius: 5px;
     font-size: 17px;
     font-family: $nunito_fonts;
-    border-radius: 5px;
     padding-left: 12px;
-    background: #f5f6fa;
     border: 0.6px solid #d5d5d5;
     outline: none;
     font-weight: 500;
     color: #6c6c6c;
+    appearance: none;
+    background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px
+        center,
+      $white_light;
+    background-size: 16px;
 
     &:focus {
       box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
@@ -104,5 +100,62 @@
     grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
     gap: 30px;
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: $white_light;
+  box-shadow: rgba($black_light, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+
+  h2 {
+    font-family: $nunito_fonts;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue_light;
+    text-align: center;
+  }
+
+  .modal-inputt {
+    margin-top: 10px;
+    width: 100%;
+
+    .MuiInputBase-root {
+      width: 100%;
+      border-radius: 5px;
+      background: $white_light;
+      border: 1px solid #ccc;
+      padding: 10px;
+      outline: none;
+      font-family: $nunito_fonts;
+
+      &:focus {
+        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+      }
+    }
+  }
+
+  .modal-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $blue_light;
+    color: #fff;
+    border: none;
+    font-family: $nunito_fonts;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($blue_light, 10%);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
   }
 }
