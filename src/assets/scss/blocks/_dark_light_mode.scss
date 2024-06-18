@@ -261,6 +261,13 @@
   }
 }
 
+.groups_card-light {
+  color: $black_light;
+}
+.groups_card-dark {
+  color: $white_light;
+}
+
 .groups_page_head_filters_choose_teacher-light,
 .groups_page_head_filters_choose_course-light {
   background: url("/src/assets/images/select-icon.jpg") no-repeat right 10px
