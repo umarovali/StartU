@@ -1,0 +1,382 @@
+.teach_start {
+    padding: 30px;
+    width: 100%;
+
+    h1 {
+        font-family: $nunito_fonts;
+    }
+
+    .teach_block {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 14px;
+        padding: 20px;
+        background: $white_light;
+        border: 1px solid $white_light;
+
+        .group_teachers {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba($green_light, 0.1);
+            box-shadow: 1px 1px 10px 1.5px rgba(56, 255, 96, 0.41);
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+
+
+            .group_teachers_icons0 {
+                font-size: 55px;
+                margin-top: -10px;
+                color: $green_light;
+            }
+
+            .group_teachers_h2 {
+                h2 {
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: $green_light;
+                    font-family: $nunito_fonts;
+
+                }
+
+                p {
+                    font-size: 1.2em;
+                    color: $black_light;
+                    font-family: $nunito_fonts;
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+        .group_teachers_man {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba($blue_light, 0.2);
+            box-shadow: 1px 1px 10px 1.5px rgba(51, 10, 255, 0.22);
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+
+            .group_teachers_icons_man {
+                font-size: 35px;
+                color: $blue_light;
+
+            }
+
+
+
+
+
+
+            .group_teachers_h2_man {
+                .group_teachers_h2_man_1 {
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: $blue_light;
+
+                    font-family: $nunito_fonts;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    color: $black_light;
+                    font-family: $nunito_fonts;
+                }
+
+            }
+
+        }
+
+        .group_teachers_woman {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba($red_light, 0.1);
+            box-shadow: 1px 1px 10px 1.5px rgba(255, 0, 0, 0.22);
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+
+            .group_teachers_icons_woman {
+                font-size: 35px;
+                color: $red_light;
+
+            }
+
+
+
+
+            .group_teachers_h2_man {
+                .group_teachers_h2_man_1 {
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: $blue_light;
+
+                    font-family: $nunito_fonts;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    color: $black_light;
+                    font-family: $nunito_fonts;
+                }
+            }
+
+
+
+
+
+            .group_teachers_h2_woman {
+                .group_teachers_h2_woman_1 {
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                    color: $red_light;
+
+                    font-family: $nunito_fonts;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    color: $black_light;
+                    font-family: $nunito_fonts;
+                }
+            }
+        }
+    }
+
+    .teacher_list {
+        margin-top: 40px;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 14px;
+        background: $white_light;
+        padding: 20px;
+
+        h2 {
+            font-size: 1.5em;
+            font-family: $nunito_fonts;
+            margin-bottom: 20px;
+        }
+
+        .teach_in_se {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .teach_input {
+                display: flex;
+                position: relative;
+
+                .search_input {
+                    width: 500px;
+                    height: 40px;
+                    padding: 10px 40px 10px 10px;
+                    border-radius: 5px;
+                    border: 1px solid $gray_light;
+                    font-family: $nunito_fonts;
+                    outline: none;
+
+                    &:focus {
+                        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+                    }
+
+                }
+
+                .search_icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                    cursor: pointer;
+
+                }
+            }
+
+            .select {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .category_select {
+                    padding: 10px;
+                    margin-left: 10px;
+                    border-radius: 4px;
+                    border-color: 1px solid $gray_light;
+                    background-color: $white_light;
+                    cursor: pointer;
+                    font-family: $nunito_fonts;
+                    color: $black_light;
+                    outline: none;
+
+                    &:focus {
+                        box-shadow: 0px 0px 7px 1px rgba($blue_light, 0.4);
+                    }
+
+                }
+
+                .btn_FaPlusCircle_teach {
+
+                    width: 210px;
+                    background-color: $blue_light;
+                    outline: none;
+                    padding: 5px;
+                    font-family: $nunito_fonts;
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 4px;
+                    color: $white_light;
+                    cursor: pointer;
+
+                    gap: 10px;
+
+                    .CiCirclePlus_teacher {
+                        font-size: 25px;
+                        background-color: $blue_light;
+                        border-radius: 100%;
+
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+        .teach_info2 {
+            list-style-type: none;
+
+            border: 1px solid $gray_light;
+            border-radius: 5px;
+            justify-content: center;
+            display: block;
+            margin-top: 30px;
+
+
+
+            .teach_hr {
+                color: $gray_light;
+
+            }
+
+            .teacher_item {
+                padding: 20px 30px;
+                width: 100%;
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                font-size: 1.1em;
+                font-family: $nunito_fonts;
+                justify-content: space-between;
+
+                .teacher_id {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 20px;
+                    border-radius: 2px;
+
+
+                }
+
+
+                .FaRegCircleUser {
+                    font-size: 30px;
+                    margin-left: 20px;
+                    color: $blue_light;
+
+                }
+
+                .teacher_item1 {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 199px;
+
+
+                }
+
+                .teacher_years {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 107px;
+
+
+                }
+
+                .teacher_nomder {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 176px;
+
+
+                }
+
+
+                .teacher_name_man {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 157px;
+                    color: $blue_light;
+
+
+                }
+
+                .teacher_name_woman {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 157px;
+                    color: $red_light;
+
+
+                }
+
+
+                .teacher_man {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 107px;
+                    color: $blue_light;
+
+
+                }
+
+                .teacher_woman {
+                    margin-left: 30px;
+                    display: flex;
+                    width: 107px;
+                    color: $red_light;
+
+
+                }
+
+
+
+
+                .teach_thiplpoint {
+                    display: flex;
+                    justify-content: end;
+                    width: 100px
+                }
+            }
+        }
+    }
+}
