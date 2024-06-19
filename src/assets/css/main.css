@@ -1071,14 +1071,14 @@ template {
      object-fit: contain;
 }
 
-.teach_start {
+.teachers_start {
   padding: 30px;
   width: 100%;
 }
-.teach_start h1 {
+.teachers_start h1 {
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block {
+.teachers_start .teacher_blocks {
   display: flex;
   gap: 30px;
   margin-top: 20px;
@@ -1089,7 +1089,7 @@ template {
   background: #fff;
   border: 1px solid #fff;
 }
-.teach_start .teach_block .group_teachers {
+.teachers_start .teacher_blocks .groups_teachers {
   width: 100%;
   padding: 20px;
   background-color: rgba(0, 182, 155, 0.1);
@@ -1098,23 +1098,23 @@ template {
   display: flex;
   gap: 10px;
 }
-.teach_start .teach_block .group_teachers .group_teachers_icons0 {
+.teachers_start .teacher_blocks .groups_teachers .groups_teachers_icons0 {
   font-size: 55px;
   margin-top: -10px;
   color: #00b69b;
 }
-.teach_start .teach_block .group_teachers .group_teachers_h2 h2 {
+.teachers_start .teacher_blocks .groups_teachers .groups_teachers_h2 h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #00b69b;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block .group_teachers .group_teachers_h2 p {
+.teachers_start .teacher_blocks .groups_teachers .groups_teachers_h2 p {
   font-size: 1.2em;
   color: #202224;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block .group_teachers_man {
+.teachers_start .teacher_blocks .groups_teachers_mans {
   width: 100%;
   padding: 20px;
   background-color: rgba(72, 128, 255, 0.2);
@@ -1123,22 +1123,22 @@ template {
   display: flex;
   gap: 10px;
 }
-.teach_start .teach_block .group_teachers_man .group_teachers_icons_man {
+.teachers_start .teacher_blocks .groups_teachers_mans .groups_teachers_icons_mans {
   font-size: 35px;
   color: #4880ff;
 }
-.teach_start .teach_block .group_teachers_man .group_teachers_h2_man .group_teachers_h2_man_1 {
+.teachers_start .teacher_blocks .groups_teachers_mans .groups_teachers_h2_mans .groups_teachers_h2_mans_1 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #4880ff;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block .group_teachers_man .group_teachers_h2_man p {
+.teachers_start .teacher_blocks .groups_teachers_mans .groups_teachers_h2_mans p {
   font-size: 1.2em;
   color: #202224;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block .group_teachers_woman {
+.teachers_start .teacher_blocks .groups_teachers_womans {
   width: 100%;
   padding: 20px;
   background-color: rgba(249, 60, 101, 0.1);
@@ -1147,33 +1147,22 @@ template {
   display: flex;
   gap: 10px;
 }
-.teach_start .teach_block .group_teachers_woman .group_teachers_icons_woman {
+.teachers_start .teacher_blocks .groups_teachers_womans .groups_teachers_icons_womans {
   font-size: 35px;
   color: #f93c65;
 }
-.teach_start .teach_block .group_teachers_woman .group_teachers_h2_man .group_teachers_h2_man_1 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #4880ff;
-  font-family: "Nunito Sans", sans-serif;
-}
-.teach_start .teach_block .group_teachers_woman .group_teachers_h2_man p {
-  font-size: 1.2em;
-  color: #202224;
-  font-family: "Nunito Sans", sans-serif;
-}
-.teach_start .teach_block .group_teachers_woman .group_teachers_h2_woman .group_teachers_h2_woman_1 {
+.teachers_start .teacher_blocks .groups_teachers_womans .groups_teachers_h2_womans .groups_teachers_h2_womans_1 {
   font-size: 1.5em;
   margin-bottom: 10px;
   color: #f93c65;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teach_block .group_teachers_woman .group_teachers_h2_woman p {
+.teachers_start .teacher_blocks .groups_teachers_womans .groups_teachers_h2_womans p {
   font-size: 1.2em;
   color: #202224;
   font-family: "Nunito Sans", sans-serif;
 }
-.teach_start .teacher_list {
+.teachers_start .teachers_list {
   margin-top: 40px;
   box-sizing: border-box;
   width: 100%;
@@ -1181,21 +1170,21 @@ template {
   background: #fff;
   padding: 20px;
 }
-.teach_start .teacher_list h2 {
+.teachers_start .teachers_list h2 {
   font-size: 1.5em;
   font-family: "Nunito Sans", sans-serif;
   margin-bottom: 20px;
 }
-.teach_start .teacher_list .teach_in_se {
+.teachers_start .teachers_list .teachers_input_selects {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.teach_start .teacher_list .teach_in_se .teach_input {
+.teachers_start .teachers_list .teachers_input_selects .teachers_inputs {
   display: flex;
   position: relative;
 }
-.teach_start .teacher_list .teach_in_se .teach_input .search_input {
+.teachers_start .teachers_list .teachers_input_selects .teachers_inputs .teachers_searchs_inputs {
   width: 500px;
   height: 40px;
   padding: 10px 40px 10px 10px;
@@ -1204,10 +1193,10 @@ template {
   font-family: "Nunito Sans", sans-serif;
   outline: none;
 }
-.teach_start .teacher_list .teach_in_se .teach_input .search_input:focus {
+.teachers_start .teachers_list .teachers_input_selects .teachers_inputs .teachers_searchs_inputs:focus {
   box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
 }
-.teach_start .teacher_list .teach_in_se .teach_input .search_icon {
+.teachers_start .teachers_list .teachers_input_selects .teachers_inputs .teachers_searchs_icons {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -1215,12 +1204,12 @@ template {
   font-size: 20px;
   cursor: pointer;
 }
-.teach_start .teacher_list .teach_in_se .select {
+.teachers_start .teachers_list .teachers_input_selects .teachers_selects {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.teach_start .teacher_list .teach_in_se .select .category_select {
+.teachers_start .teachers_list .teachers_input_selects .teachers_selects .teachers_category_selects {
   padding: 10px;
   margin-left: 10px;
   border-radius: 4px;
@@ -1231,10 +1220,10 @@ template {
   color: #202224;
   outline: none;
 }
-.teach_start .teacher_list .teach_in_se .select .category_select:focus {
+.teachers_start .teachers_list .teachers_input_selects .teachers_selects .teachers_category_selects:focus {
   box-shadow: 0px 0px 7px 1px rgba(72, 128, 255, 0.4);
 }
-.teach_start .teacher_list .teach_in_se .select .btn_FaPlusCircle_teach {
+.teachers_start .teachers_list .teachers_input_selects .teachers_selects .btns_FaPlusCircle_teachers {
   width: 210px;
   background-color: #4880ff;
   outline: none;
@@ -1249,12 +1238,12 @@ template {
   cursor: pointer;
   gap: 10px;
 }
-.teach_start .teacher_list .teach_in_se .select .btn_FaPlusCircle_teach .CiCirclePlus_teacher {
+.teachers_start .teachers_list .teachers_input_selects .teachers_selects .btns_FaPlusCircle_teachers .FaPlusCircle_teachers {
   font-size: 25px;
   background-color: #4880ff;
   border-radius: 100%;
 }
-.teach_start .teacher_list .teach_info2 {
+.teachers_start .teachers_list .teachers_information {
   list-style-type: none;
   border: 1px solid #d5d5d5;
   border-radius: 5px;
@@ -1262,10 +1251,11 @@ template {
   display: block;
   margin-top: 30px;
 }
-.teach_start .teacher_list .teach_info2 .teach_hr {
+.teachers_start .teachers_list .teachers_information .teach_hr {
   color: #d5d5d5;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item {
+
+.teachers_item2 {
   padding: 20px 30px;
   width: 100%;
   margin: 10px 0;
@@ -1275,57 +1265,57 @@ template {
   font-family: "Nunito Sans", sans-serif;
   justify-content: space-between;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_id {
+.teachers_item2 .teachers_ids {
   display: flex;
   justify-content: center;
   font-size: 20px;
   border-radius: 2px;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .FaRegCircleUser {
+.teachers_item2 .teachers_items_FaRegCircleUser {
   font-size: 30px;
   margin-left: 20px;
   color: #4880ff;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_item1 {
+.teachers_item2 .teachers_items1 {
   margin-left: 30px;
   display: flex;
   width: 199px;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_years {
+.teachers_item2 .teachers_years {
   margin-left: 30px;
   display: flex;
   width: 107px;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_nomder {
+.teachers_item2 .teachers_nomders {
   margin-left: 30px;
   display: flex;
   width: 176px;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_name_man {
+.teachers_item2 .teachers_names_mans {
   margin-left: 30px;
   display: flex;
   width: 157px;
   color: #4880ff;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_name_woman {
+.teachers_item2 .teachers_names_womans {
   margin-left: 30px;
   display: flex;
   width: 157px;
   color: #f93c65;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_man {
+.teachers_item2 .teachers_mans {
   margin-left: 30px;
   display: flex;
   width: 107px;
   color: #4880ff;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teacher_woman {
+.teachers_item2 .teachers_womans {
   margin-left: 30px;
   display: flex;
   width: 107px;
   color: #f93c65;
 }
-.teach_start .teacher_list .teach_info2 .teacher_item .teach_thiplpoint {
+.teachers_item2 .teachers_thiplpoints {
   display: flex;
   justify-content: end;
   width: 100px;

@@ -1,0 +1,98 @@
+
+
+.teachers_item2 {
+    padding: 20px 30px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-family: $nunito_fonts;
+    justify-content: space-between;
+
+    .teachers_ids {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        border-radius: 2px;
+
+
+    }
+
+
+    .teachers_items_FaRegCircleUser {
+        font-size: 30px;
+        margin-left: 20px;
+        color: $blue_light;
+
+    }
+
+    .teachers_items1 {
+        margin-left: 30px;
+        display: flex;
+        width: 199px;
+
+
+    }
+
+    .teachers_years {
+        margin-left: 30px;
+        display: flex;
+        width: 107px;
+
+
+    }
+
+    .teachers_nomders {
+        margin-left: 30px;
+        display: flex;
+        width: 176px;
+
+
+    }
+
+
+    .teachers_names_mans {
+        margin-left: 30px;
+        display: flex;
+        width: 157px;
+        color: $blue_light;
+
+
+    }
+
+    .teachers_names_womans {
+        margin-left: 30px;
+        display: flex;
+        width: 157px;
+        color: $red_light;
+
+
+    }
+
+
+    .teachers_mans {
+        margin-left: 30px;
+        display: flex;
+        width: 107px;
+        color: $blue_light;
+
+
+    }
+
+    .teachers_womans{
+        margin-left: 30px;
+        display: flex;
+        width: 107px;
+        color: $red_light;
+
+
+    }
+
+    .teachers_thiplpoints {
+        display: flex;
+        justify-content: end;
+        width: 100px
+    }
+
+}
