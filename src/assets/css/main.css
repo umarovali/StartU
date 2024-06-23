@@ -658,6 +658,20 @@ template {
   box-shadow: 0px 0px 8px 2px rgba(216, 216, 216, 0.2);
 }
 
+.goog-te-gadget-simple-light {
+  background: #fff;
+}
+.goog-te-gadget-simple-light span {
+  color: #202224;
+}
+
+.goog-te-gadget-simple-dark {
+  background: #273142;
+}
+.goog-te-gadget-simple-dark span {
+  color: #fff;
+}
+
 .container {
   max-width: 95%;
   width: 100%;
@@ -1557,4 +1571,42 @@ template {
 .paymet-wrapper .paymet-paid-dark:hover {
   transform: scale(1.02);
   box-shadow: 12px 12px 84px 0px rgba(72, 128, 255, 0.1);
+}
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-gadget-sub,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.goog-te-gadget-simple-light,
+.goog-te-gadget-simple-dark {
+  border: 0.6px solid #d5d5d5;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 5px;
+  margin: 6px;
+  transition: 0.5s all linear;
+}
+.goog-te-gadget-simple-light a,
+.goog-te-gadget-simple-dark a {
+  color: red;
+}
+
+.goog-te-gadget-simple img {
+  display: none;
+}
+
+.custom-translate-span {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
