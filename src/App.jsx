@@ -11,6 +11,7 @@ import Students from "./Pages/Students/Students";
 import Payment from "./Pages/Payment/Payment";
 
 export default function App() {
+  
   return (
     <div className="app">
       <Header />
