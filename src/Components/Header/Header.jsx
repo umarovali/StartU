@@ -7,6 +7,7 @@ import { MdWbSunny } from "react-icons/md";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import useDarkModeStore from "../../Store/DarcModeStore";
 import useBurgerStore from "../../Store/BurgerStore";
+import Translete from "../Translete/Translete";
 
 export default function Header() {
   const { darkMode, toggleDarkMode } = useDarkModeStore();
@@ -18,7 +19,6 @@ export default function Header() {
     return () => {
       document.body.className = "";
     };
-
   }, [darkMode]);
 
   return (
@@ -26,8 +26,14 @@ export default function Header() {
       <div className="container">
         <div className="header_wrapper">
           <div className="header_left">
-
-            {isMenuOpen ? <FaArrowRightFromBracket className="header_burger" onClick={toggleMenu} /> : <RxHamburgerMenu className="header_burger" onClick={toggleMenu} />}
+            {isMenuOpen ? (
+              <FaArrowRightFromBracket
+                className="header_burger"
+                onClick={toggleMenu}
+              />
+            ) : (
+              <RxHamburgerMenu className="header_burger" onClick={toggleMenu} />
+            )}
 
             <div className="header_search_icon_input">
               <FiSearch
@@ -56,7 +62,7 @@ export default function Header() {
             </button>
 
             <p className="header_language">
-              <span>RU</span> / <span>KG</span>
+              <Translete />
             </p>
 
             <div className="header_profile">

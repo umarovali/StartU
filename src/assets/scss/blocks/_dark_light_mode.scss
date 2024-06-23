@@ -300,3 +300,19 @@
   color: $white_light;
   box-shadow: 0px 0px 8px 2px rgba(216, 216, 216, 0.2);
 }
+
+// translate
+
+.goog-te-gadget-simple-light {
+  background: $white_light;
+  span {
+    color: $black_light;
+  }
+}
+.goog-te-gadget-simple-dark {
+  background: $black_dark;
+
+  span {
+    color: $white_light;
+  }
+}
